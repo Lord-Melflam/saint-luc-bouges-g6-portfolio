@@ -1,0 +1,19 @@
+annex_id	week	type	title	source_path	target_filename	description
+A01	1	notes	Week 1 notes	2.Weeks/W1/notes.txt	A01_W1_notes.txt	Course kickoff and first framing notes
+A02	2	deliverable	Hackathon group submission	2.Weeks/W2/Hackathon_group4.pdf	A02_W2_hackathon_group4.pdf	Group hackathon output
+A03	2	notes	Week 2 notes	2.Weeks/W2/notes.txt	A03_W2_notes.txt	Hackathon reflections and next actions
+A04	3	deliverable	Stakeholders mapping (CLIP)	2.Weeks/W3/20260219 Stakeholders mapping - CLIP analysis.pdf	A04_W3_stakeholders_clip.pdf	Stakeholder analysis support
+A05	3	notes	Week 3 notes	2.Weeks/W3/notes.txt	A05_W3_notes.txt	Stakeholder strategy notes
+A06	4	deliverable	Report Project 6	2.Weeks/W4/Deliverables/Report_Project_6.pdf	A06_W4_report_project6.pdf	Stakeholders and empathizing report
+A07	5	deliverable	Problem definition	2.Weeks/W5/20260305 Problem definition.pdf	A07_W5_problem_definition.pdf	Problem framing material
+A08	5	notes	Week 5 notes	2.Weeks/W5/notes.txt	A08_W5_notes.txt	Problem-definition follow-up notes
+A09	6	notes	Saint-Luc visit notes	2.Weeks/W6/Visite_Saint-Luc/notes.txt	A09_W6_visit_notes.txt	Field observations from hospital visit
+A10	7	deliverable	Deliverable 2-2	2.Weeks/W7/Delivrables/Deliverable_2-2 2.pdf	A10_W7_deliverable_2_2.pdf	Formal weekly deliverable
+A11	7	deliverable	Portfolio group project 6	2.Weeks/W7/Delivrables/Portfolio_Group_Project_6.pdf	A11_W7_portfolio_group6.pdf	Portfolio state at week 7
+A12	7	deliverable	Presentation patient discharge	2.Weeks/W7/Delivrables/Presentation - Patient Discharge Management.pptx	A12_W7_presentation_patient_discharge.pptx	Presentation support
+A13	7	deliverable	Business model canvas	2.Weeks/W7/202060319 BMC.pdf	A13_W7_bmc.pdf	BMC applied to solution concept
+A14	9	notes	Week 9 notes	2.Weeks/W9/notes.txt	A14_W9_notes.txt	Financing/regulation week notes
+A15	10	notes	Week 10 notes	2.Weeks/W10/notes.txt	A15_W10_notes.txt	Sub-problem split and planning notes
+A16	11	deliverable	Upstream deliverable markdown	2.Weeks/W11/Upstream_Deliverable_Francois.md	A16_W11_upstream_deliverable.md	Upstream write-up
+A17	11	deliverable	Upstream deliverable latex	2.Weeks/W11/Upstream_Deliverable_Francois.tex	A17_W11_upstream_deliverable.tex	Overleaf-ready version
+A18	11	prototype	Upstream prototype README	6.Experiments/upstream-prototypes/README.md	A18_W11_upstream_prototype_readme.md	Prototype documentation

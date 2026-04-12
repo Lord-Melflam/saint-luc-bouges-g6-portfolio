@@ -1,0 +1,20 @@
+window.ANNEXES_DATA = [
+  {"id":"A01","week":1,"type":"notes","title":"Week 1 notes","description":"Course kickoff and first framing notes","source":"2.Weeks/W1/notes.txt","file":"annexes/A01_W1_notes.txt"},
+  {"id":"A02","week":2,"type":"deliverable","title":"Hackathon group submission","description":"Group hackathon output","source":"2.Weeks/W2/Hackathon_group4.pdf","file":"annexes/A02_W2_hackathon_group4.pdf"},
+  {"id":"A03","week":2,"type":"notes","title":"Week 2 notes","description":"Hackathon reflections and next actions","source":"2.Weeks/W2/notes.txt","file":"annexes/A03_W2_notes.txt"},
+  {"id":"A04","week":3,"type":"deliverable","title":"Stakeholders mapping (CLIP)","description":"Stakeholder analysis support","source":"2.Weeks/W3/20260219 Stakeholders mapping - CLIP analysis.pdf","file":"annexes/A04_W3_stakeholders_clip.pdf"},
+  {"id":"A05","week":3,"type":"notes","title":"Week 3 notes","description":"Stakeholder strategy notes","source":"2.Weeks/W3/notes.txt","file":"annexes/A05_W3_notes.txt"},
+  {"id":"A06","week":4,"type":"deliverable","title":"Report Project 6","description":"Stakeholders and empathizing report","source":"2.Weeks/W4/Deliverables/Report_Project_6.pdf","file":"annexes/A06_W4_report_project6.pdf"},
+  {"id":"A07","week":5,"type":"deliverable","title":"Problem definition","description":"Problem framing material","source":"2.Weeks/W5/20260305 Problem definition.pdf","file":"annexes/A07_W5_problem_definition.pdf"},
+  {"id":"A08","week":5,"type":"notes","title":"Week 5 notes","description":"Problem-definition follow-up notes","source":"2.Weeks/W5/notes.txt","file":"annexes/A08_W5_notes.txt"},
+  {"id":"A09","week":6,"type":"notes","title":"Saint-Luc visit notes","description":"Field observations from hospital visit","source":"2.Weeks/W6/Visite_Saint-Luc/notes.txt","file":"annexes/A09_W6_visit_notes.txt"},
+  {"id":"A10","week":7,"type":"deliverable","title":"Deliverable 2-2","description":"Formal weekly deliverable","source":"2.Weeks/W7/Delivrables/Deliverable_2-2 2.pdf","file":"annexes/A10_W7_deliverable_2_2.pdf"},
+  {"id":"A11","week":7,"type":"deliverable","title":"Portfolio group project 6","description":"Portfolio state at week 7","source":"2.Weeks/W7/Delivrables/Portfolio_Group_Project_6.pdf","file":"annexes/A11_W7_portfolio_group6.pdf"},
+  {"id":"A12","week":7,"type":"deliverable","title":"Presentation patient discharge","description":"Presentation support","source":"2.Weeks/W7/Delivrables/Presentation - Patient Discharge Management.pptx","file":"annexes/A12_W7_presentation_patient_discharge.pptx"},
+  {"id":"A13","week":7,"type":"deliverable","title":"Business model canvas","description":"BMC applied to solution concept","source":"2.Weeks/W7/202060319 BMC.pdf","file":"annexes/A13_W7_bmc.pdf"},
+  {"id":"A14","week":9,"type":"notes","title":"Week 9 notes","description":"Financing/regulation week notes","source":"2.Weeks/W9/notes.txt","file":"annexes/A14_W9_notes.txt"},
+  {"id":"A15","week":10,"type":"notes","title":"Week 10 notes","description":"Sub-problem split and planning notes","source":"2.Weeks/W10/notes.txt","file":"annexes/A15_W10_notes.txt"},
+  {"id":"A16","week":11,"type":"deliverable","title":"Upstream deliverable markdown","description":"Upstream write-up","source":"2.Weeks/W11/Upstream_Deliverable_Francois.md","file":"annexes/A16_W11_upstream_deliverable.md"},
+  {"id":"A17","week":11,"type":"deliverable","title":"Upstream deliverable latex","description":"Overleaf-ready version","source":"2.Weeks/W11/Upstream_Deliverable_Francois.tex","file":"annexes/A17_W11_upstream_deliverable.tex"},
+  {"id":"A18","week":11,"type":"prototype","title":"Upstream prototype README","description":"Prototype documentation","source":"6.Experiments/upstream-prototypes/README.md","file":"annexes/A18_W11_upstream_prototype_readme.md"}
+];

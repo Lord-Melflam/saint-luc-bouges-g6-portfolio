@@ -94,6 +94,43 @@
     draw();
   }
 
+  function renderAnnexes() {
+    const body = document.getElementById("annexes-body");
+    if (!body || !window.ANNEXES_DATA) return;
+    const weekFilter = document.getElementById("annex-filter-week");
+    const typeFilter = document.getElementById("annex-filter-type");
+    const queryInput = document.getElementById("annex-filter-query");
+
+    function draw() {
+      const week = weekFilter.value;
+      const type = typeFilter.value;
+      const q = queryInput.value.trim().toLowerCase();
+      const rows = window.ANNEXES_DATA.filter((a) => {
+        const wk = week === "all" || String(a.week) === week;
+        const tp = type === "all" || a.type === type;
+        const qq = q === "" || `${a.id} ${a.title} ${a.description} ${a.source}`.toLowerCase().includes(q);
+        return wk && tp && qq;
+      });
+      body.innerHTML = rows.map((a) => `
+        <tr>
+          <td>${a.id}</td>
+          <td>W${a.week}</td>
+          <td>${a.type}</td>
+          <td>${a.title}</td>
+          <td>${a.description}</td>
+          <td><a href="${a.file}" target="_blank" rel="noreferrer">Open annex</a></td>
+          <td><code>${a.source}</code></td>
+        </tr>
+      `).join("");
+    }
+
+    weekFilter.addEventListener("change", draw);
+    typeFilter.addEventListener("change", draw);
+    queryInput.addEventListener("input", draw);
+    draw();
+  }
+
   renderDeliverables();
   renderWeeks();
+  renderAnnexes();
 })();

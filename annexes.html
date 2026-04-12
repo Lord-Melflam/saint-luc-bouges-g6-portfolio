@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Annexes - Group 6 Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="topbar">
+      <span class="badge">Annexes</span>
+      <div>
+        <button type="button" onclick="setTheme('dark')">Dark</button>
+        <button type="button" onclick="setTheme('light')">Light</button>
+        <button type="button" onclick="setTheme('auto')">Auto</button>
+      </div>
+    </div>
+    <h1>Annexes library</h1>
+    <p class="subtitle">All selected weekly deliverables are mirrored here and filterable by week/type.</p>
+
+    <nav>
+      <a href="index.html">Overview</a>
+      <a href="summary.html">Summary</a>
+      <a href="weeks.html">Weeks</a>
+      <a href="annexes.html">Annexes</a>
+      <a href="upstream.html">Upstream</a>
+      <a href="during.html">During</a>
+      <a href="downstream.html">Downstream</a>
+      <a href="deliverables.html">Deliverables</a>
+      <a href="references.html">References</a>
+    </nav>
+
+    <div class="filter-row">
+      <select id="annex-filter-week">
+        <option value="all">All weeks</option>
+        <option value="1">W1</option><option value="2">W2</option><option value="3">W3</option>
+        <option value="4">W4</option><option value="5">W5</option><option value="6">W6</option>
+        <option value="7">W7</option><option value="8">W8</option><option value="9">W9</option>
+        <option value="10">W10</option><option value="11">W11</option><option value="12">W12</option>
+        <option value="13">W13</option>
+      </select>
+      <select id="annex-filter-type">
+        <option value="all">All types</option>
+        <option value="deliverable">Deliverable</option>
+        <option value="notes">Notes</option>
+        <option value="prototype">Prototype</option>
+      </select>
+      <input id="annex-filter-query" type="text" placeholder="Search annex by title or source path" />
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Annex</th>
+          <th>Week</th>
+          <th>Type</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Pointer</th>
+          <th>Original source</th>
+        </tr>
+      </thead>
+      <tbody id="annexes-body"></tbody>
+    </table>
+
+    <footer class="footer">
+      <strong>Group 6</strong><br />
+      Maurine Poncelet <span class="dot">•</span> Francois Meli <span class="dot">•</span> Lheo Rary <span class="dot">•</span> Jabrane Mouhtadi
+    </footer>
+  </main>
+  <script src="assets/annexes.js"></script>
+  <script src="assets/site.js"></script>
+</body>
+</html>

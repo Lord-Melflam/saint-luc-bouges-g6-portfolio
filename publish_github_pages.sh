@@ -11,6 +11,8 @@ cd "$SCRIPT_DIR"
 
 gh auth status >/dev/null
 
+bash "$SCRIPT_DIR/sync_annexes.sh"
+
 if [[ ! -d ".git" ]]; then
   git init -b main
 fi

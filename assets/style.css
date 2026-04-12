@@ -150,6 +150,14 @@ nav a.active {
   background: var(--panel);
   color: var(--text);
 }
+.filter-row input {
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 8px 10px;
+  background: var(--panel);
+  color: var(--text);
+  min-width: 220px;
+}
 .status-badge {
   display: inline-block;
   border-radius: 999px;
