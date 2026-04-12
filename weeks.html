@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Deliverables - Group 6 Portfolio</title>
+  <title>Weeks Tracker - Group 6 Portfolio</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <main class="container">
     <div class="topbar">
-      <span class="badge">Deliverables</span>
+      <span class="badge">Weeks Tracker</span>
       <div>
         <button type="button" onclick="setTheme('dark')">Dark</button>
         <button type="button" onclick="setTheme('light')">Light</button>
         <button type="button" onclick="setTheme('auto')">Auto</button>
       </div>
     </div>
-    <h1>Deliverables tracker</h1>
-    <p class="subtitle">Single page to keep all artifact links and ownership visible.</p>
+    <h1>Weekly progress (W1 to W13)</h1>
+    <p class="subtitle">Track progress by week and filter by stream and completion threshold.</p>
 
     <nav>
       <a href="index.html">Overview</a>
@@ -30,41 +30,22 @@
     </nav>
 
     <div class="filter-row">
-      <select id="filter-week">
-        <option value="all">All weeks</option>
-        <option value="1">W1</option><option value="2">W2</option><option value="3">W3</option>
-        <option value="4">W4</option><option value="5">W5</option><option value="6">W6</option>
-        <option value="7">W7</option><option value="8">W8</option><option value="9">W9</option>
-        <option value="10">W10</option><option value="11">W11</option><option value="12">W12</option>
-        <option value="13">W13</option>
-      </select>
-      <select id="filter-stream">
+      <select id="weeks-filter-stream">
         <option value="all">All streams</option>
         <option value="upstream">Upstream</option>
         <option value="during">During</option>
         <option value="downstream">Downstream</option>
       </select>
-      <select id="filter-status">
-        <option value="all">All status</option>
-        <option value="done">Done</option>
-        <option value="in-progress">In progress</option>
-        <option value="planned">Planned</option>
+      <select id="weeks-filter-progress">
+        <option value="0">Any progress</option>
+        <option value="25">25% and above</option>
+        <option value="50">50% and above</option>
+        <option value="75">75% and above</option>
+        <option value="100">Completed only (100%)</option>
       </select>
     </div>
 
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Item</th>
-          <th>Owner</th>
-          <th>Week</th>
-          <th>Stream</th>
-          <th>Status</th>
-          <th>Location</th>
-        </tr>
-      </thead>
-      <tbody id="deliverables-body"></tbody>
-    </table>
+    <section id="weeks-grid" class="week-grid"></section>
 
     <footer class="footer">
       <strong>Group 6</strong><br />

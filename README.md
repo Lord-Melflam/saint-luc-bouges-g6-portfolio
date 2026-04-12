@@ -4,10 +4,11 @@ This folder contains the interactive project portfolio website.
 
 ## Pages
 - `index.html` - overview
+- `weeks.html` - weekly tracker (W1-W13) with filters
 - `upstream.html` - Francois stream
 - `during.html` - Jabrane stream
 - `downstream.html` - Maurine stream
-- `deliverables.html` - consolidated artifact tracker
+- `deliverables.html` - consolidated artifact tracker with week/stream/status filters
 - `references.html` - methods and source materials
 
 ## Local use

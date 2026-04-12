@@ -136,3 +136,52 @@ nav a.active {
 }
 
 .small { font-size: 13px; color: var(--muted); }
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.filter-row select {
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 8px 10px;
+  background: var(--panel);
+  color: var(--text);
+}
+.status-badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 4px 9px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.status-done { background: rgba(71, 214, 156, 0.22); color: #67d9ab; }
+.status-in-progress { background: rgba(255, 204, 102, 0.2); color: #ffcc66; }
+.status-planned { background: rgba(148, 163, 184, 0.2); color: #c5d0e8; }
+
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+.week-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+}
+.week-card h3 { margin: 0 0 6px; }
+.progress {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.progress > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+}
