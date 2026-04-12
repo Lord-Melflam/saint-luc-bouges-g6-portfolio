@@ -1,19 +1,44 @@
 annex_id	week	type	title	source_path	target_filename	description
 A01	1	notes	Week 1 notes	2.Weeks/W1/notes.txt	A01_W1_notes.txt	Course kickoff and first framing notes
-A02	2	deliverable	Hackathon group submission	2.Weeks/W2/Hackathon_group4.pdf	A02_W2_hackathon_group4.pdf	Group hackathon output
-A03	2	notes	Week 2 notes	2.Weeks/W2/notes.txt	A03_W2_notes.txt	Hackathon reflections and next actions
-A04	3	deliverable	Stakeholders mapping (CLIP)	2.Weeks/W3/20260219 Stakeholders mapping - CLIP analysis.pdf	A04_W3_stakeholders_clip.pdf	Stakeholder analysis support
-A05	3	notes	Week 3 notes	2.Weeks/W3/notes.txt	A05_W3_notes.txt	Stakeholder strategy notes
-A06	4	deliverable	Report Project 6	2.Weeks/W4/Deliverables/Report_Project_6.pdf	A06_W4_report_project6.pdf	Stakeholders and empathizing report
-A07	5	deliverable	Problem definition	2.Weeks/W5/20260305 Problem definition.pdf	A07_W5_problem_definition.pdf	Problem framing material
-A08	5	notes	Week 5 notes	2.Weeks/W5/notes.txt	A08_W5_notes.txt	Problem-definition follow-up notes
-A09	6	notes	Saint-Luc visit notes	2.Weeks/W6/Visite_Saint-Luc/notes.txt	A09_W6_visit_notes.txt	Field observations from hospital visit
-A10	7	deliverable	Deliverable 2-2	2.Weeks/W7/Delivrables/Deliverable_2-2 2.pdf	A10_W7_deliverable_2_2.pdf	Formal weekly deliverable
-A11	7	deliverable	Portfolio group project 6	2.Weeks/W7/Delivrables/Portfolio_Group_Project_6.pdf	A11_W7_portfolio_group6.pdf	Portfolio state at week 7
-A12	7	deliverable	Presentation patient discharge	2.Weeks/W7/Delivrables/Presentation - Patient Discharge Management.pptx	A12_W7_presentation_patient_discharge.pptx	Presentation support
-A13	7	deliverable	Business model canvas	2.Weeks/W7/202060319 BMC.pdf	A13_W7_bmc.pdf	BMC applied to solution concept
-A14	9	notes	Week 9 notes	2.Weeks/W9/notes.txt	A14_W9_notes.txt	Financing/regulation week notes
-A15	10	notes	Week 10 notes	2.Weeks/W10/notes.txt	A15_W10_notes.txt	Sub-problem split and planning notes
-A16	11	deliverable	Upstream deliverable markdown	2.Weeks/W11/Upstream_Deliverable_Francois.md	A16_W11_upstream_deliverable.md	Upstream write-up
-A17	11	deliverable	Upstream deliverable latex	2.Weeks/W11/Upstream_Deliverable_Francois.tex	A17_W11_upstream_deliverable.tex	Overleaf-ready version
-A18	11	prototype	Upstream prototype README	6.Experiments/upstream-prototypes/README.md	A18_W11_upstream_prototype_readme.md	Prototype documentation
+A02	1	cm	Intro - Design Thinking - DFV	2.Weeks/W1/20260203_1 Intro-DT-DFV.pdf	A02_W1_cm_intro_dtv.pdf	Course material
+A03	1	cm	Empathize - Hackathon	2.Weeks/W1/20260203_2 Empathize-hackathon.pdf	A03_W1_cm_empathize_hackathon.pdf	Course material
+A04	2	cm	Hackathon program (12-13 Feb)	2.Weeks/W2/Course materials-20260212/20260212-13 Hackathon.pdf	A04_W2_cm_hackathon_program.pdf	Course material
+A05	2	cm	Hackathon Day 2 Pitching	2.Weeks/W2/Course materials-20260212/20260213 LEPL2022 - Innovation Classes - Hackathon – Day 2 - Pitching  .pdf	A05_W2_cm_hackathon_day2_pitching.pdf	Course material
+A06	2	cm	Hackathon special case material	2.Weeks/W2/Course materials-20260212/Hackathon_1213-02.pdf	A06_W2_cm_hackathon_special.pdf	Course material (special case)
+A07	2	deliverable	Hackathon group submission	2.Weeks/W2/Hackathon_group4.pdf	A07_W2_hackathon_group4.pdf	Group hackathon output
+A08	2	notes	Week 2 notes	2.Weeks/W2/notes.txt	A08_W2_notes.txt	Hackathon reflections and next actions
+A09	3	cm	Healthcare ecosystem and stakeholders	2.Weeks/W3/20260219 Healthcare ecosystem and stakeholders_G Saelens_v1.pptx	A09_W3_cm_healthcare_ecosystem.pptx	Course material
+A10	3	cm	Stakeholders mapping - CLIP analysis	2.Weeks/W3/20260219 Stakeholders mapping - CLIP analysis.pdf	A10_W3_cm_stakeholders_clip.pdf	Course material
+A11	3	notes	Week 3 notes	2.Weeks/W3/notes.txt	A11_W3_notes.txt	Stakeholder strategy notes
+A12	4	deliverable	Report project 6	2.Weeks/W4/Deliverables/Report_Project_6.pdf	A12_W4_report_project6.pdf	Stakeholders and empathizing report
+A13	5	cm	Problem definition lecture	2.Weeks/W5/20260305 Problem definition.pdf	A13_W5_cm_problem_definition.pdf	Course material
+A14	5	notes	Week 5 notes	2.Weeks/W5/notes.txt	A14_W5_notes.txt	Problem-definition follow-up notes
+A15	6	visit	Saint-Luc visit notes	2.Weeks/W6/Visite_Saint-Luc/notes.txt	A15_W6_visit_notes.txt	Field observations from hospital visit
+A16	6	visit	Visit photo 20260319	2.Weeks/W6/Visite_Saint-Luc/20260319_120425.jpg	A16_W6_visit_20260319_120425.jpg	Visit photo
+A17	6	visit	Visit photo received_1214408374193687	2.Weeks/W6/Visite_Saint-Luc/received_1214408374193687.jpeg	A17_W6_visit_received_1214408374193687.jpeg	Visit photo
+A18	6	visit	Visit photo received_1347365154090678	2.Weeks/W6/Visite_Saint-Luc/received_1347365154090678.jpeg	A18_W6_visit_received_1347365154090678.jpeg	Visit photo
+A19	6	visit	Visit photo received_1572980247142465	2.Weeks/W6/Visite_Saint-Luc/received_1572980247142465.jpeg	A19_W6_visit_received_1572980247142465.jpeg	Visit photo
+A20	6	visit	Visit photo received_1629922264703500	2.Weeks/W6/Visite_Saint-Luc/received_1629922264703500.jpeg	A20_W6_visit_received_1629922264703500.jpeg	Visit photo
+A21	6	visit	Visit photo received_1745616956410253	2.Weeks/W6/Visite_Saint-Luc/received_1745616956410253.jpeg	A21_W6_visit_received_1745616956410253.jpeg	Visit photo
+A22	6	visit	Visit photo received_2101968503972846	2.Weeks/W6/Visite_Saint-Luc/received_2101968503972846.jpeg	A22_W6_visit_received_2101968503972846.jpeg	Visit photo
+A23	6	visit	Visit photo remastered	2.Weeks/W6/Visite_Saint-Luc/received_2101968503972846_remastered.jpg	A23_W6_visit_received_2101968503972846_remastered.jpg	Visit photo
+A24	6	visit	Visit photo received_2146754282826849	2.Weeks/W6/Visite_Saint-Luc/received_2146754282826849.jpeg	A24_W6_visit_received_2146754282826849.jpeg	Visit photo
+A25	6	visit	Visit photo received_2286453801883918	2.Weeks/W6/Visite_Saint-Luc/received_2286453801883918.jpeg	A25_W6_visit_received_2286453801883918.jpeg	Visit photo
+A26	6	visit	Visit photo received_3625537987585185	2.Weeks/W6/Visite_Saint-Luc/received_3625537987585185.jpeg	A26_W6_visit_received_3625537987585185.jpeg	Visit photo
+A27	6	visit	Visit photo received_4337663339805030	2.Weeks/W6/Visite_Saint-Luc/received_4337663339805030.jpeg	A27_W6_visit_received_4337663339805030.jpeg	Visit photo
+A28	6	visit	Visit photo received_743916638653986	2.Weeks/W6/Visite_Saint-Luc/received_743916638653986.jpeg	A28_W6_visit_received_743916638653986.jpeg	Visit photo
+A29	6	visit	Visit photo received_905083232310479	2.Weeks/W6/Visite_Saint-Luc/received_905083232310479.jpeg	A29_W6_visit_received_905083232310479.jpeg	Visit photo
+A30	6	visit	Visit photo received_908642025279140	2.Weeks/W6/Visite_Saint-Luc/received_908642025279140.jpeg	A30_W6_visit_received_908642025279140.jpeg	Visit photo
+A31	6	visit	Visit photo received_937244865930805	2.Weeks/W6/Visite_Saint-Luc/received_937244865930805.jpeg	A31_W6_visit_received_937244865930805.jpeg	Visit photo
+A32	7	cm	Ideation lecture	2.Weeks/W7/20260317 Ideation.pdf	A32_W7_cm_ideation.pdf	Course material
+A33	7	deliverable	Deliverable 2-2	2.Weeks/W7/Delivrables/Deliverable_2-2 2.pdf	A33_W7_deliverable_2_2.pdf	Formal weekly deliverable
+A34	7	deliverable	Portfolio group project 6	2.Weeks/W7/Delivrables/Portfolio_Group_Project_6.pdf	A34_W7_portfolio_group6.pdf	Portfolio state at week 7
+A35	7	deliverable	Presentation patient discharge	2.Weeks/W7/Delivrables/Presentation - Patient Discharge Management.pptx	A35_W7_presentation_patient_discharge.pptx	Presentation support
+A36	7	deliverable	Business model canvas	2.Weeks/W7/202060319 BMC.pdf	A36_W7_bmc.pdf	BMC applied to solution concept
+A37	9	cm	Hospital project financial evaluation	2.Weeks/W9/20260331 - Evaluation financière dun projet.pdf	A37_W9_cm_financial_evaluation.pdf	Course material
+A38	9	cm	Regulations and guidelines in health	2.Weeks/W9/20260402 LEPL2021_Regulations_v1.pdf	A38_W9_cm_regulations.pdf	Course material
+A39	9	notes	Week 9 notes	2.Weeks/W9/notes.txt	A39_W9_notes.txt	Financing/regulation week notes
+A40	10	notes	Week 10 notes	2.Weeks/W10/notes.txt	A40_W10_notes.txt	Sub-problem split and planning notes
+A41	11	deliverable	Upstream Group 6 deliverable (markdown)	2.Weeks/W11/Upstream_Deliverable_Francois.md	A41_W11_upstream_group6_deliverable.md	Upstream write-up
+A42	11	deliverable	Upstream Group 6 deliverable (latex)	2.Weeks/W11/Upstream_Deliverable_Francois.tex	A42_W11_upstream_group6_deliverable.tex	Overleaf-ready version
+A43	11	prototype	Upstream Group 6 prototype README	6.Experiments/upstream-prototypes/README.md	A43_W11_upstream_group6_prototype_readme.md	Prototype documentation

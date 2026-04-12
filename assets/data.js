@@ -16,16 +16,104 @@ window.PORTFOLIO_DATA = {
   ],
   deliverables: [
     {
-      item: "Upstream write-up (.md)",
-      owner: "Francois",
+      item: "W1 notes",
+      owner: "Group 6",
+      status: "done",
+      week: 1,
+      stream: "all",
+      location: "2.Weeks/W1/notes.txt"
+    },
+    {
+      item: "W2 hackathon group submission",
+      owner: "Group 6",
+      status: "done",
+      week: 2,
+      stream: "all",
+      location: "2.Weeks/W2/Hackathon_group4.pdf"
+    },
+    {
+      item: "W3 stakeholder strategy notes",
+      owner: "Group 6",
+      status: "done",
+      week: 3,
+      stream: "all",
+      location: "2.Weeks/W3/notes.txt"
+    },
+    {
+      item: "W4 report project 6",
+      owner: "Group 6",
+      status: "done",
+      week: 4,
+      stream: "all",
+      location: "2.Weeks/W4/Deliverables/Report_Project_6.pdf"
+    },
+    {
+      item: "W5 notes and problem framing follow-up",
+      owner: "Group 6",
+      status: "done",
+      week: 5,
+      stream: "all",
+      location: "2.Weeks/W5/notes.txt"
+    },
+    {
+      item: "W6 Saint-Luc visit observations",
+      owner: "Group 6",
+      status: "done",
+      week: 6,
+      stream: "all",
+      location: "2.Weeks/W6/Visite_Saint-Luc/notes.txt"
+    },
+    {
+      item: "W7 deliverable 2-2",
+      owner: "Group 6",
+      status: "done",
+      week: 7,
+      stream: "all",
+      location: "2.Weeks/W7/Delivrables/Deliverable_2-2 2.pdf"
+    },
+    {
+      item: "W7 portfolio group project 6",
+      owner: "Group 6",
+      status: "done",
+      week: 7,
+      stream: "all",
+      location: "2.Weeks/W7/Delivrables/Portfolio_Group_Project_6.pdf"
+    },
+    {
+      item: "W7 support presentation",
+      owner: "Group 6",
+      status: "done",
+      week: 7,
+      stream: "all",
+      location: "2.Weeks/W7/Delivrables/Presentation - Patient Discharge Management.pptx"
+    },
+    {
+      item: "W9 notes (financing and regulation)",
+      owner: "Group 6",
+      status: "done",
+      week: 9,
+      stream: "all",
+      location: "2.Weeks/W9/notes.txt"
+    },
+    {
+      item: "W10 strategic split notes",
+      owner: "Group 6",
+      status: "done",
+      week: 10,
+      stream: "all",
+      location: "2.Weeks/W10/notes.txt"
+    },
+    {
+      item: "Upstream Group 6 write-up (.md)",
+      owner: "Group 6",
       status: "done",
       week: 11,
       stream: "upstream",
       location: "2.Weeks/W11/Upstream_Deliverable_Francois.md"
     },
     {
-      item: "Upstream write-up (.tex)",
-      owner: "Francois",
+      item: "Upstream Group 6 write-up (.tex)",
+      owner: "Group 6",
       status: "done",
       week: 11,
       stream: "upstream",
@@ -33,7 +121,7 @@ window.PORTFOLIO_DATA = {
     },
     {
       item: "Upstream prototype stack",
-      owner: "Francois",
+      owner: "Group 6",
       status: "done",
       week: 11,
       stream: "upstream",

@@ -101,6 +101,14 @@
     const typeFilter = document.getElementById("annex-filter-type");
     const queryInput = document.getElementById("annex-filter-query");
 
+    function typeLabel(value) {
+      if (value === "cm") return "CM";
+      if (value === "visit") return "Visit";
+      if (value === "prototype") return "Prototype";
+      if (value === "notes") return "Notes";
+      return "Deliverable";
+    }
+
     function draw() {
       const week = weekFilter.value;
       const type = typeFilter.value;
@@ -115,7 +123,7 @@
         <tr>
           <td>${a.id}</td>
           <td>W${a.week}</td>
-          <td>${a.type}</td>
+          <td>${typeLabel(a.type)}</td>
           <td>${a.title}</td>
           <td>${a.description}</td>
           <td><a href="${a.file}" target="_blank" rel="noreferrer">Open annex</a></td>

@@ -1,0 +1,121 @@
+{\color{blue}
+\subsection{Upstream (Francois)}
+
+\subsubsection{Upstream challenge statement}
+\textbf{How might we better predict the length of stay and improve communication with patients about their care pathway, in order to anticipate hospital discharge earlier and more accurately?}
+
+This upstream challenge focuses on reducing uncertainty before discharge by combining better anticipation with clearer patient communication.
+
+\subsubsection{Why this ideation method}
+For this sub-problem, I used \textbf{Morphological Analysis (Morphological Matrix)} because it is a structured ideation method that:
+\begin{itemize}
+  \item fits the \textbf{diverge then converge} logic from the course ideation framework,
+  \item allows rapid generation of many realistic combinations,
+  \item is well adapted to a systems-oriented/engineering approach.
+\end{itemize}
+
+This method is presented in our course material (W7 Ideation) as a structured way to explore solution spaces by combining key dimensions of a problem.
+
+\subsubsection{Ideation setup (Morphological Matrix)}
+I explored combinations across four dimensions:
+\begin{enumerate}
+  \item \textbf{Inputs for anticipation:} historical LOS, diagnosis/procedure type, social discharge constraints
+  \item \textbf{Prediction approach:} simple rules, risk score, advanced ML
+  \item \textbf{Communication channel:} nurse script, printed pathway sheet, SMS reminder
+  \item \textbf{Update timing:} admission, D-2, D-1, day of discharge
+\end{enumerate}
+
+This produced multiple candidate concepts, then narrowed down through DFV scoring.
+
+\subsubsection{Convergence with DFV}
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{7.5cm}|c|c|c|c|}
+\hline
+\textbf{Concept} & \textbf{Desirable} & \textbf{Feasible} & \textbf{Viable} & \textbf{Total} \\
+\hline
+A. Simple LOS score + confidence level & 4 & 5 & 5 & \textbf{14} \\
+\hline
+B. Advanced ML prediction model & 3 & 2 & 2 & 7 \\
+\hline
+C. Discharge checklist from admission & 4 & 5 & 4 & 13 \\
+\hline
+D. Automated SMS communication journey & 4 & 3 & 3 & 10 \\
+\hline
+E. Shared unit dashboard for expected discharges & 5 & 4 & 4 & 13 \\
+\hline
+F. Daily 10-minute discharge huddle & 4 & 5 & 5 & \textbf{14} \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Pivot decision:} Replace concept B (advanced ML, low feasibility/viability now) with a lighter and deployable alternative: concept A (simple score + confidence + daily update).
+
+\subsubsection{Final upstream concept}
+\textbf{Early Discharge Forecast \& Communication Bundle}
+
+Three integrated components:
+\begin{enumerate}
+  \item \textbf{Early forecast at admission:} estimated discharge date + confidence level.
+  \item \textbf{Daily update ritual:} short team huddle to confirm/adjust expected discharges.
+  \item \textbf{Standardized patient communication:} clear milestone updates on expected pathway (D-2, D-1, discharge day).
+\end{enumerate}
+
+\subsubsection{Why this concept is robust}
+\begin{itemize}
+  \item \textbf{Desirable:} improves visibility for teams and transparency for patients/families.
+  \item \textbf{Feasible:} low technical burden, compatible with current operations.
+  \item \textbf{Viable:} limited implementation cost, scalable unit by unit.
+\end{itemize}
+
+\subsubsection{Risks and mitigation}
+\begin{itemize}
+  \item \textbf{Risk:} low team adoption. \\
+  \textbf{Mitigation:} one owner per unit + fixed 10-minute daily ritual.
+  \item \textbf{Risk:} prediction errors. \\
+  \textbf{Mitigation:} confidence levels + mandatory daily reassessment.
+  \item \textbf{Risk:} communication inconsistency. \\
+  \textbf{Mitigation:} standard communication template for all units.
+\end{itemize}
+
+\subsubsection{Expected impact (KPIs)}
+\begin{itemize}
+  \item Improved discharge date prediction accuracy.
+  \item Higher share of patients informed at least 24h in advance.
+  \item Fewer last-minute discharge delays and reduced bed-flow friction.
+\end{itemize}
+
+\subsubsection{Prototype developed (how, why, and goal)}
+To move from concept to action, I developed a small prototype stack in Python + web:
+\begin{itemize}
+  \item \textbf{los\_forecast.py}: a lightweight LOS prediction engine with a confidence level and an early-coordination flag.
+  \item \textbf{daily\_huddle\_board.py}: an operational board generator to support daily team alignment around expected discharges and blockers.
+  \item \textbf{communication\_flow.py}: a D-2 / D-1 / D0 communication scheduler to standardize patient updates.
+  \item \textbf{Web demo (index.html)}: an interactive interface to present the logic and discuss decisions with non-technical stakeholders.
+\end{itemize}
+
+\paragraph{How it was developed}
+The prototype was built iteratively from the selected upstream concept:
+\begin{enumerate}
+  \item define simple and explainable prediction rules,
+  \item transform output into operational decision support (huddle board),
+  \item connect prediction to patient communication milestones,
+  \item package the result in a publishable web demo for team reviews.
+\end{enumerate}
+
+\paragraph{Why this prototype}
+This approach was chosen to remain realistic in the current project scope:
+\begin{itemize}
+  \item no heavy infrastructure,
+  \item transparent logic for clinical discussion,
+  \item fast iteration cycles for group feedback.
+\end{itemize}
+
+\paragraph{Goal of the prototype}
+The goal is not to deliver a final hospital system, but to provide a \textbf{credible proof of feasibility} for the upstream strategy:
+\begin{itemize}
+  \item anticipate discharge earlier,
+  \item improve coordination before the discharge day,
+  \item improve communication consistency with patients.
+\end{itemize}
+}

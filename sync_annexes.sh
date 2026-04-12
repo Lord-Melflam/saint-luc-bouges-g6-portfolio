@@ -8,6 +8,7 @@ ANNEX_DIR="$SCRIPT_DIR/annexes"
 JS_OUT="$SCRIPT_DIR/assets/annexes.js"
 
 mkdir -p "$ANNEX_DIR"
+find "$ANNEX_DIR" -type f -delete
 
 {
   echo "window.ANNEXES_DATA = ["
