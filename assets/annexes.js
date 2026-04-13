@@ -39,7 +39,5 @@ window.ANNEXES_DATA = [
   {"id":"A38","week":9,"type":"cm","title":"Regulations and guidelines in health","description":"Course material","source":"2.Weeks/W9/20260402 LEPL2021_Regulations_v1.pdf","file":"annexes/A38_W9_cm_regulations.pdf"},
   {"id":"A39","week":9,"type":"notes","title":"Week 9 notes","description":"Financing/regulation week notes","source":"2.Weeks/W9/notes.txt","file":"annexes/A39_W9_notes.txt"},
   {"id":"A40","week":10,"type":"notes","title":"Week 10 notes","description":"Sub-problem split and planning notes","source":"2.Weeks/W10/notes.txt","file":"annexes/A40_W10_notes.txt"},
-  {"id":"A41","week":11,"type":"deliverable","title":"Portfolio iteration 2","description":"Portfolio annex for week 11","source":"2.Weeks/W11/Portfolio_iteration2.pdf","file":"annexes/A41_W11_portfolio_iteration2.pdf"},
-  {"id":"A42","week":11,"type":"deliverable","title":"Upstream Group 6 deliverable (markdown)","description":"Upstream write-up","source":"2.Weeks/W11/Upstream_Deliverable_Francois.md","file":"annexes/A42_W11_upstream_group6_deliverable.md"},
-  {"id":"A43","week":11,"type":"prototype","title":"Upstream Group 6 prototype README","description":"Prototype documentation","source":"6.Experiments/upstream-prototypes/README.md","file":"annexes/A43_W11_upstream_group6_prototype_readme.md"}
+  {"id":"A41","week":11,"type":"deliverable","title":"Portfolio iteration 2","description":"Portfolio annex for week 11","source":"2.Weeks/W11/Portfolio_iteration2.pdf","file":"annexes/A41_W11_portfolio_iteration2.pdf"}
 ];

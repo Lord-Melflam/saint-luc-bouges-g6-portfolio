@@ -32,36 +32,49 @@
 
   function renderDeliverables() {
     const tableBody = document.getElementById("deliverables-body");
-    if (!tableBody || !window.PORTFOLIO_DATA) return;
+    if (!tableBody) return;
     const weekFilter = document.getElementById("filter-week");
-    const streamFilter = document.getElementById("filter-stream");
-    const statusFilter = document.getElementById("filter-status");
+    const queryInput = document.getElementById("filter-query");
 
     function draw() {
       const week = weekFilter.value;
-      const stream = streamFilter.value;
-      const status = statusFilter.value;
+      const q = (queryInput?.value || "").trim().toLowerCase();
+
+      // Canonical source: same dataset as Annexes page, filtered on type=deliverable
+      if (window.ANNEXES_DATA) {
+        const rows = window.ANNEXES_DATA.filter((a) => {
+          const w = week === "all" || String(a.week) === week;
+          const t = a.type === "deliverable";
+          const qq = q === "" || `${a.id} ${a.title} ${a.description} ${a.source}`.toLowerCase().includes(q);
+          return w && t && qq;
+        });
+        tableBody.innerHTML = rows.map((a) => `
+          <tr>
+            <td>${a.id}</td>
+            <td>W${a.week}</td>
+            <td>${a.title}</td>
+            <td>${a.description}</td>
+            <td><a href="${a.file}" target="_blank" rel="noreferrer">Open deliverable</a></td>
+            <td><code>${a.source}</code></td>
+          </tr>
+        `).join("");
+        return;
+      }
+
+      // Fallback if annexes data is not loaded
+      if (!window.PORTFOLIO_DATA) return;
       const rows = window.PORTFOLIO_DATA.deliverables.filter((d) => {
         const w = week === "all" || String(d.week) === week;
-        const s = stream === "all" || d.stream === stream || d.stream === "all";
-        const st = status === "all" || d.status === status;
-        return w && s && st;
+        const qq = q === "" || `${d.item} ${d.location}`.toLowerCase().includes(q);
+        return w && qq;
       });
-      tableBody.innerHTML = rows.map((d) => `
-        <tr>
-          <td>${d.item}</td>
-          <td>${d.owner}</td>
-          <td>W${d.week}</td>
-          <td>${d.stream}</td>
-          <td><span class="status-badge ${statusClass(d.status)}">${capStatus(d.status)}</span></td>
-          <td><code>${d.location}</code></td>
-        </tr>
-      `).join("");
+      tableBody.innerHTML = rows.map((d) => `<tr>
+        <td>-</td><td>W${d.week}</td><td>${d.item}</td><td>${d.status || "done"}</td><td>-</td><td><code>${d.location}</code></td>
+      </tr>`).join("");
     }
 
     weekFilter.addEventListener("change", draw);
-    streamFilter.addEventListener("change", draw);
-    statusFilter.addEventListener("change", draw);
+    if (queryInput) queryInput.addEventListener("input", draw);
     draw();
   }
 

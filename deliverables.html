@@ -17,7 +17,7 @@
       </div>
     </div>
     <h1>Deliverables tracker</h1>
-    <p class="subtitle">Single page to keep all artifact links and ownership visible.</p>
+    <p class="subtitle">This page is automatically synced with Annexes filtered by type = Deliverable.</p>
 
     <nav>
       <a href="index.html">Overview</a>
@@ -40,29 +40,18 @@
         <option value="10">W10</option><option value="11">W11</option><option value="12">W12</option>
         <option value="13">W13</option>
       </select>
-      <select id="filter-stream">
-        <option value="all">All streams</option>
-        <option value="upstream">Upstream</option>
-        <option value="during">During</option>
-        <option value="downstream">Downstream</option>
-      </select>
-      <select id="filter-status">
-        <option value="all">All status</option>
-        <option value="done">Done</option>
-        <option value="in-progress">In progress</option>
-        <option value="planned">Planned</option>
-      </select>
+      <input id="filter-query" type="text" placeholder="Search by annex ID, title, description, source" />
     </div>
 
     <table class="table">
       <thead>
         <tr>
-          <th>Item</th>
-          <th>Owner</th>
+          <th>Annex</th>
           <th>Week</th>
-          <th>Stream</th>
-          <th>Status</th>
-          <th>Location</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Pointer</th>
+          <th>Original source</th>
         </tr>
       </thead>
       <tbody id="deliverables-body"></tbody>
@@ -73,7 +62,7 @@
       Maurine Poncelet <span class="dot">•</span> Francois Meli <span class="dot">•</span> Lheo Rary <span class="dot">•</span> Jabrane Mouhtadi
     </footer>
   </main>
-  <script src="assets/data.js"></script>
+  <script src="assets/annexes.js"></script>
   <script src="assets/site.js"></script>
 </body>
 </html>
