@@ -62,7 +62,38 @@
       Maurine Poncelet <span class="dot">•</span> Francois Meli <span class="dot">•</span> Lheo Rary <span class="dot">•</span> Jabrane Mouhtadi
     </footer>
   </main>
-  <script src="assets/annexes.js"></script>
-  <script src="assets/site.js"></script>
+  <script src="assets/annexes.js?v=20260413b"></script>
+  <script>
+    (function () {
+      function fallbackRender() {
+        const body = document.getElementById("deliverables-body");
+        const weekFilter = document.getElementById("filter-week");
+        const queryInput = document.getElementById("filter-query");
+        if (!body || !window.ANNEXES_DATA) return;
+        if (body.children.length > 0) return;
+
+        const week = (weekFilter && weekFilter.value) ? weekFilter.value : "all";
+        const q = (queryInput && queryInput.value ? queryInput.value : "").trim().toLowerCase();
+        const rows = window.ANNEXES_DATA.filter((a) => {
+          const w = week === "all" || String(a.week) === week;
+          const t = a.type === "deliverable";
+          const qq = q === "" || (a.id + " " + a.title + " " + a.description + " " + a.source).toLowerCase().includes(q);
+          return w && t && qq;
+        });
+        body.innerHTML = rows.map((a) =>
+          "<tr>" +
+          "<td>" + a.id + "</td>" +
+          "<td>W" + a.week + "</td>" +
+          "<td>" + a.title + "</td>" +
+          "<td>" + a.description + "</td>" +
+          "<td><a href=\"" + a.file + "\" target=\"_blank\" rel=\"noreferrer\">Open deliverable</a></td>" +
+          "<td><code>" + a.source + "</code></td>" +
+          "</tr>"
+        ).join("");
+      }
+      window.addEventListener("load", fallbackRender);
+    })();
+  </script>
+  <script src="assets/site.js?v=20260413b"></script>
 </body>
 </html>
