@@ -42,6 +42,7 @@ Interactive project portfolio for the 13-week Health Innovation journey (Group 6
 The annex system is pointer-oriented and non-destructive:
 - originals remain in their source folders (e.g. `2.Weeks/...`),
 - selected files are mirrored into `annexes/` for clean web links.
+- personal processing files (e.g. intermediate `.tex` authoring files) are intentionally excluded from annexes/deliverables unless explicitly marked in the manifest.
 
 Files:
 - `annexes_manifest.tsv` - annex source of truth

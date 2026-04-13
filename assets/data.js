@@ -7,10 +7,10 @@ window.PORTFOLIO_DATA = {
     { week: 5, title: "Problem definition", progress: 100, stream: "all" },
     { week: 6, title: "Hospital visit and field notes", progress: 100, stream: "all" },
     { week: 7, title: "Ideation and BMC", progress: 100, stream: "all" },
-    { week: 8, title: "Consolidation", progress: 60, stream: "all" },
+    { week: 8, title: "Consolidation", progress: 100, stream: "all" },
     { week: 9, title: "Financing and regulation", progress: 100, stream: "all" },
     { week: 10, title: "3 sub-problems split and planning", progress: 100, stream: "all" },
-    { week: 11, title: "Prototype and stream convergence", progress: 85, stream: "upstream" },
+    { week: 11, title: "Prototype and stream convergence", progress: 75, stream: "all" },
     { week: 12, title: "Final integration", progress: 40, stream: "all" },
     { week: 13, title: "Final polishing and closure", progress: 20, stream: "all" }
   ],
@@ -112,14 +112,6 @@ window.PORTFOLIO_DATA = {
       location: "2.Weeks/W11/Upstream_Deliverable_Francois.md"
     },
     {
-      item: "Upstream Group 6 write-up (.tex)",
-      owner: "Group 6",
-      status: "done",
-      week: 11,
-      stream: "upstream",
-      location: "2.Weeks/W11/Upstream_Deliverable_Francois.tex"
-    },
-    {
       item: "Upstream prototype stack",
       owner: "Group 6",
       status: "done",
@@ -129,19 +121,35 @@ window.PORTFOLIO_DATA = {
     },
     {
       item: "During stream content",
-      owner: "Jabrane",
-      status: "in-progress",
+      owner: "Group 6",
+      status: "done",
       week: 11,
       stream: "during",
       location: "6.Experiments/portfolio/during.html"
     },
     {
       item: "Downstream stream content",
-      owner: "Maurine",
+      owner: "Group 6",
       status: "in-progress",
       week: 11,
       stream: "downstream",
       location: "6.Experiments/portfolio/downstream.html"
+    },
+    {
+      item: "Lheo stream content (integration/BMC)",
+      owner: "Group 6",
+      status: "in-progress",
+      week: 11,
+      stream: "all",
+      location: "To be integrated in portfolio"
+    },
+    {
+      item: "Portfolio iteration 2",
+      owner: "Group 6",
+      status: "done",
+      week: 11,
+      stream: "all",
+      location: "2.Weeks/W11/Portfolio_iteration2.pdf"
     },
     {
       item: "Portfolio website scaffold",
