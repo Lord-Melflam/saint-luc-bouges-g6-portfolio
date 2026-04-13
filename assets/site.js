@@ -38,7 +38,7 @@
 
     function draw() {
       const week = weekFilter.value;
-      const q = (queryInput?.value || "").trim().toLowerCase();
+      const q = ((queryInput && queryInput.value) ? queryInput.value : "").trim().toLowerCase();
 
       // Canonical source: same dataset as Annexes page, filtered on type=deliverable
       if (window.ANNEXES_DATA) {
@@ -48,6 +48,10 @@
           const qq = q === "" || `${a.id} ${a.title} ${a.description} ${a.source}`.toLowerCase().includes(q);
           return w && t && qq;
         });
+        if (rows.length === 0) {
+          tableBody.innerHTML = `<tr><td colspan="6">No deliverables match the current filters.</td></tr>`;
+          return;
+        }
         tableBody.innerHTML = rows.map((a) => `
           <tr>
             <td>${a.id}</td>
