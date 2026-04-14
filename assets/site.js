@@ -155,7 +155,41 @@
     draw();
   }
 
+  function initRevealAndCounters() {
+    const revealNodes = document.querySelectorAll(".reveal");
+    if (revealNodes.length) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in");
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      revealNodes.forEach((n) => io.observe(n));
+    }
+
+    const counters = document.querySelectorAll("[data-count]");
+    counters.forEach((el) => {
+      const target = Number(el.getAttribute("data-count"));
+      if (!Number.isFinite(target)) return;
+      let current = 0;
+      const steps = 24;
+      const tick = () => {
+        current += Math.ceil(target / steps);
+        if (current >= target) {
+          el.textContent = String(target);
+          return;
+        }
+        el.textContent = String(current);
+        requestAnimationFrame(tick);
+      };
+      tick();
+    });
+  }
+
   renderDeliverables();
   renderWeeks();
   renderAnnexes();
+  initRevealAndCounters();
 })();
