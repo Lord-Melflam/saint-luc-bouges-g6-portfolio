@@ -27,7 +27,7 @@ fi
 
 git add .
 if ! git diff --cached --quiet; then
-  git commit -m "$COMMIT_MSG" -m "Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+  git commit -m "$COMMIT_MSG" -m "nothing to see here"
 fi
 
 git push -u origin main
