@@ -38,19 +38,47 @@
       </div>
     </section>
 
-    <section class="grid reveal">
-      <article class="card">
-        <h2>Challenge</h2>
-        <p>How might we better predict length of stay and improve communication with patients about their care pathway, to anticipate discharge earlier and more accurately?</p>
-      </article>
-      <article class="card">
-        <h2>Approach</h2>
-        <p>Morphological analysis followed by DFV convergence. Selected concept: <strong>Early Discharge Forecast & Communication Bundle</strong>.</p>
-      </article>
-      <article class="card">
-        <h2>Prototype stack</h2>
-        <p>Rule-based LOS engine, daily huddle board, D-2/D-1/D0 communication generator, and interactive web dashboard.</p>
-      </article>
+    <section class="card reveal" style="margin-top:14px;">
+      <h2>Challenge statement</h2>
+      <p>How might we better predict length of stay and improve communication with patients about their care pathway, to anticipate discharge earlier and more accurately?</p>
+    </section>
+
+    <section class="card reveal" style="margin-top:14px;">
+      <h2>Why this ideation method</h2>
+      <p>
+        Following the W7 ideation framework, we used a <strong>morphological matrix</strong> to diverge then converge in a structured way.
+        This method generated realistic combinations quickly and matched the systems-oriented nature of the problem.
+      </p>
+      <ul>
+        <li><strong>Inputs for anticipation:</strong> historical LOS, diagnosis/procedure type, social discharge constraints.</li>
+        <li><strong>Prediction approach:</strong> simple rules, risk score, advanced ML.</li>
+        <li><strong>Communication channel:</strong> nurse script, printed pathway sheet, SMS reminder.</li>
+        <li><strong>Update timing:</strong> admission, D-2, D-1, discharge day.</li>
+      </ul>
+    </section>
+
+    <section class="card reveal" style="margin-top:14px;">
+      <h2>Convergence with DFV (from deliverable table)</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Concept</th>
+            <th>Desirable</th>
+            <th>Feasible</th>
+            <th>Viable</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>A. Simple LOS score + confidence level</td><td>4</td><td>5</td><td>5</td><td><strong>14</strong></td></tr>
+          <tr><td>B. Advanced ML prediction model</td><td>3</td><td>2</td><td>2</td><td>7</td></tr>
+          <tr><td>C. Discharge checklist from admission</td><td>4</td><td>5</td><td>4</td><td>13</td></tr>
+          <tr><td>D. Automated SMS communication journey</td><td>4</td><td>3</td><td>3</td><td>10</td></tr>
+          <tr><td>E. Shared unit dashboard for expected discharges</td><td>5</td><td>4</td><td>4</td><td>13</td></tr>
+          <tr><td>F. Daily 10-minute discharge huddle</td><td>4</td><td>5</td><td>5</td><td><strong>14</strong></td></tr>
+        </tbody>
+      </table>
+      <p class="small"><strong>Pivot decision:</strong> advanced ML was postponed; deployable concept A was retained for immediate feasibility.</p>
     </section>
 
     <section class="card reveal" style="margin-top:14px;">
@@ -60,6 +88,16 @@
         <div class="timeline-item"><strong>D-1:</strong> confidence update, unresolved blockers flagged, responsibility assignment.</div>
         <div class="timeline-item"><strong>D0:</strong> final confirmation workflow with explicit fallback if delay occurs.</div>
       </div>
+    </section>
+
+    <section class="card reveal" style="margin-top:14px;">
+      <h2>Why the selected concept is robust</h2>
+      <ul>
+        <li><strong>Desirable:</strong> clearer visibility for teams and better transparency for patients/families.</li>
+        <li><strong>Feasible:</strong> low technical burden and direct compatibility with current operations.</li>
+        <li><strong>Viable:</strong> controlled implementation cost and staged scaling by unit.</li>
+      </ul>
+      <p class="small">Expected impact KPIs: better discharge-date accuracy, more patients informed 24h+ in advance, fewer last-minute delays.</p>
     </section>
 
     <section class="card reveal" style="margin-top:14px;">
