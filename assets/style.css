@@ -1,23 +1,27 @@
 :root {
-  --bg: #0b1020;
-  --bg2: #141d3d;
+  --bg: #111417;
+  --bg2: #1c2329;
   --panel: rgba(255, 255, 255, 0.08);
-  --text: #edf2ff;
-  --muted: #b2c0e8;
-  --line: rgba(255, 255, 255, 0.18);
-  --accent: #5ea2ff;
-  --accent2: #895dff;
+  --text: #eef3ef;
+  --muted: #b7c2b8;
+  --line: rgba(232, 240, 233, 0.16);
+  --accent: #4dbf8c;
+  --accent2: #d28a3a;
+  --hero1: rgba(77, 191, 140, 0.2);
+  --hero2: rgba(210, 138, 58, 0.2);
 }
 
 [data-theme="light"] {
-  --bg: #eef4ff;
-  --bg2: #d9e6ff;
+  --bg: #f7f4ec;
+  --bg2: #ece6d9;
   --panel: rgba(255, 255, 255, 0.88);
-  --text: #16203b;
-  --muted: #4f5f86;
-  --line: rgba(22, 32, 59, 0.16);
-  --accent: #1f6fff;
-  --accent2: #6f49df;
+  --text: #1d2521;
+  --muted: #5d6d63;
+  --line: rgba(29, 37, 33, 0.16);
+  --accent: #2f9f71;
+  --accent2: #b7722e;
+  --hero1: rgba(47, 159, 113, 0.14);
+  --hero2: rgba(183, 114, 46, 0.14);
 }
 
 * { box-sizing: border-box; }
@@ -200,7 +204,7 @@ nav a.active {
   padding: 18px;
   border-radius: 16px;
   margin-bottom: 14px;
-  background: linear-gradient(120deg, rgba(94,162,255,.18), rgba(137,93,255,.18));
+  background: linear-gradient(120deg, var(--hero1), var(--hero2));
   border: 1px solid var(--line);
 }
 .hero h2 { margin: 0 0 8px; }

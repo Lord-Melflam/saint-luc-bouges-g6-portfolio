@@ -9,7 +9,11 @@ COMMIT_MSG="${4:-Update portfolio website}"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-gh auth status >/dev/null
+GH_OK=1
+if ! gh auth status >/dev/null 2>&1; then
+  GH_OK=0
+  echo "Warning: gh auth unavailable; continuing with git push only." >&2
+fi
 
 bash "$SCRIPT_DIR/sync_annexes.sh"
 
@@ -18,24 +22,34 @@ if [[ ! -d ".git" ]]; then
 fi
 
 if ! git remote get-url origin >/dev/null 2>&1; then
-  if gh repo view "$OWNER/$REPO" >/dev/null 2>&1; then
-    git remote add origin "https://github.com/$OWNER/$REPO.git"
+  if [[ "$GH_OK" -eq 1 ]]; then
+    if gh repo view "$OWNER/$REPO" >/dev/null 2>&1; then
+      git remote add origin "https://github.com/$OWNER/$REPO.git"
+    else
+      gh repo create "$OWNER/$REPO" --public --source=. --remote=origin
+    fi
   else
-    gh repo create "$OWNER/$REPO" --public --source=. --remote=origin
+    echo "Error: origin remote is missing and gh auth is unavailable." >&2
+    echo "Set origin manually, then rerun this script." >&2
+    exit 1
   fi
 fi
 
 git add .
 if ! git diff --cached --quiet; then
-  git commit -m "$COMMIT_MSG" -m "nothing to see here"
+  git commit -m "$COMMIT_MSG"
 fi
 
 git push -u origin main
 
-if ! gh api "repos/$OWNER/$REPO/pages" >/dev/null 2>&1; then
-  gh api -X POST "repos/$OWNER/$REPO/pages" \
-    -f "source[branch]=main" \
-    -f "source[path]=$PAGES_PATH" >/dev/null
+if [[ "$GH_OK" -eq 1 ]]; then
+  if ! gh api "repos/$OWNER/$REPO/pages" >/dev/null 2>&1; then
+    gh api -X POST "repos/$OWNER/$REPO/pages" \
+      -f "source[branch]=main" \
+      -f "source[path]=$PAGES_PATH" >/dev/null
+  fi
+else
+  echo "Warning: skipped GitHub Pages API check because gh auth is unavailable." >&2
 fi
 
 echo "Published."

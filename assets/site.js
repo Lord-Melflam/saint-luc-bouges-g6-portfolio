@@ -1,16 +1,39 @@
 (function () {
-  const saved = localStorage.getItem("portfolio-theme");
-  if (saved) document.documentElement.setAttribute("data-theme", saved);
+  const THEME_KEY = "portfolio-theme-mode";
+  const LEGACY_THEME_KEY = "portfolio-theme";
+
+  function resolveAutoTheme() {
+    const hour = new Date().getHours();
+    return (hour >= 7 && hour < 19) ? "light" : "dark";
+  }
+
+  function applyTheme(mode) {
+    const resolved = mode === "auto" ? resolveAutoTheme() : mode;
+    document.documentElement.setAttribute("data-theme", resolved);
+  }
+
+  let mode = localStorage.getItem(THEME_KEY);
+  if (!mode) {
+    const legacy = localStorage.getItem(LEGACY_THEME_KEY);
+    if (legacy === "dark" || legacy === "light") mode = legacy;
+  }
+  if (mode !== "dark" && mode !== "light" && mode !== "auto") mode = "auto";
+  applyTheme(mode);
+  localStorage.setItem(THEME_KEY, mode);
+  localStorage.removeItem(LEGACY_THEME_KEY);
 
   window.setTheme = function (theme) {
-    if (theme === "auto") {
-      localStorage.removeItem("portfolio-theme");
-      document.documentElement.removeAttribute("data-theme");
+    if (theme !== "dark" && theme !== "light" && theme !== "auto") {
       return;
     }
-    localStorage.setItem("portfolio-theme", theme);
-    document.documentElement.setAttribute("data-theme", theme);
+    mode = theme;
+    localStorage.setItem(THEME_KEY, mode);
+    applyTheme(mode);
   };
+
+  setInterval(() => {
+    if (mode === "auto") applyTheme("auto");
+  }, 60000);
 
   const page = (location.pathname.split("/").pop() || "index.html").toLowerCase();
   for (const a of document.querySelectorAll("nav a")) {
