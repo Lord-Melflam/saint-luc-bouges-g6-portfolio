@@ -42,5 +42,9 @@ window.ANNEXES_DATA = [
   {"id":"A41","week":11,"type":"deliverable","title":"Portfolio iteration 2","description":"Portfolio annex for week 11","source":"2.Weeks/W11/Portfolio_iteration2.pdf","file":"annexes/A41_W11_portfolio_iteration2.pdf"},
   {"id":"A42","week":13,"type":"deliverable","title":"Final portfolio (PDF)","description":"Final exported portfolio PDF","source":"2.Weeks/W13/Portfolio-final.pdf","file":"annexes/A42_W13_portfolio_final.pdf"},
   {"id":"A43","week":13,"type":"deliverable","title":"Final presentation (slides)","description":"Final presentation slides","source":"2.Weeks/W13/health innovation classes - présentation finale.pptx","file":"annexes/A43_W13_presentation_final.pptx"},
-  {"id":"A44","week":13,"type":"notes","title":"Onboarding feedback (Saint-Luc)","description":"Feedback from onboarding session 11-05-2026","source":"2.Weeks/W13/feedback_onboarding_11-05-2026.txt","file":"annexes/A44_W13_onboarding_feedback.txt"}
+  {"id":"A44","week":13,"type":"notes","title":"Onboarding feedback (Saint-Luc)","description":"Feedback from onboarding session 11-05-2026","source":"2.Weeks/W13/feedback_onboarding_11-05-2026.txt","file":"annexes/A44_W13_onboarding_feedback.txt"},
+  {"id":"A45","week":12,"type":"cm","title":"Regulations and guidelines (lecture)","description":"Course material: Regulations and guidelines","source":"2.Weeks/W12/20260402 LEPL2021_Regulations_v1.pdf","file":"annexes/A45_W12_regulations.pdf"},
+  {"id":"A46","week":12,"type":"cm","title":"Pitching - Martin Nera","description":"Course material: Pitching lecture","source":"2.Weeks/W12/20260507 Pitching_Martin Nera.pdf","file":"annexes/A46_W12_pitching_martin_nera.pdf"},
+  {"id":"A47","week":12,"type":"visit","title":"Meeting snapshot (online)","description":"Meeting screenshot: online stakeholders meeting","source":"2.Weeks/W12/meeting_s12_Teams.jpg","file":"annexes/A47_W12_meeting_s12_teams.jpg"},
+  {"id":"A48","week":12,"type":"notes","title":"Meeting minutes - 08/05/2026","description":"Meeting minutes: stakeholders meeting (08-05-2026)","source":"2.Weeks/W12/Compte rendu réunion du 080526.pdf","file":"annexes/A48_W12_compte_rendu_080526.pdf"}
 ];
