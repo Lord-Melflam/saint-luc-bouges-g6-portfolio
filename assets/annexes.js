@@ -39,5 +39,8 @@ window.ANNEXES_DATA = [
   {"id":"A38","week":9,"type":"cm","title":"Regulations and guidelines in health","description":"Course material","source":"2.Weeks/W9/20260402 LEPL2021_Regulations_v1.pdf","file":"annexes/A38_W9_cm_regulations.pdf"},
   {"id":"A39","week":9,"type":"notes","title":"Week 9 notes","description":"Financing/regulation week notes","source":"2.Weeks/W9/notes.txt","file":"annexes/A39_W9_notes.txt"},
   {"id":"A40","week":10,"type":"notes","title":"Week 10 notes","description":"Sub-problem split and planning notes","source":"2.Weeks/W10/notes.txt","file":"annexes/A40_W10_notes.txt"},
-  {"id":"A41","week":11,"type":"deliverable","title":"Portfolio iteration 2","description":"Portfolio annex for week 11","source":"2.Weeks/W11/Portfolio_iteration2.pdf","file":"annexes/A41_W11_portfolio_iteration2.pdf"}
+  {"id":"A41","week":11,"type":"deliverable","title":"Portfolio iteration 2","description":"Portfolio annex for week 11","source":"2.Weeks/W11/Portfolio_iteration2.pdf","file":"annexes/A41_W11_portfolio_iteration2.pdf"},
+  {"id":"A42","week":13,"type":"deliverable","title":"Final portfolio (PDF)","description":"Final exported portfolio PDF","source":"2.Weeks/W13/Portfolio-final.pdf","file":"annexes/A42_W13_portfolio_final.pdf"},
+  {"id":"A43","week":13,"type":"deliverable","title":"Final presentation (slides)","description":"Final presentation slides","source":"2.Weeks/W13/health innovation classes - présentation finale.pptx","file":"annexes/A43_W13_presentation_final.pptx"},
+  {"id":"A44","week":13,"type":"notes","title":"Onboarding feedback (Saint-Luc)","description":"Feedback from onboarding session 11-05-2026","source":"2.Weeks/W13/feedback_onboarding_11-05-2026.txt","file":"annexes/A44_W13_onboarding_feedback.txt"}
 ];

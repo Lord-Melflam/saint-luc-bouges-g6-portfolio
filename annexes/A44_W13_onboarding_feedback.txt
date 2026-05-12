@@ -1,0 +1,37 @@
+-----------------------------------
+Ceci est un feedback de l'oboarding gréalisé à l'hopital de saint-luc bouges aujourd'hui de 15:30 à 17:00.
+Intervenant/Onboarder: François Meli
+Participants: Madame Justine EVEN + 3 autres associées (Elodie , sécrétaire au planning d'orthopédie et Margaux du planning de médécine + autre (pas demandé le nom))
+
+-----------------------------------
+Feedback sur la solution
+-----------------------------------
+Bons points:
+-Système de Notification (bonne idée car soucis parfois des familles pas au courant, patient pas au courant, oubli de notifs de l'admin, etc) !!!!!!!!
+-Bien pour l'équilibrage de la repartition des lits et avoir une vue irl (argument de poids face aux medecins qui parfois n'en font qu'à leur tête) ... Autre chose est qu'on peut grace à l'outil préparer en avance et voir pour les fermetures de service si ça passe. Donc ça peut aider pour les fermétures
+
+Points d'amélioration/de developpement supplémentaires après l'onboarding:
+-Switch en Français (bouton en français)
+-Chambre privée / differente des chambres standards. Soit flagger celui qui n'a pas le bon type de chambre par rapport à sademande et auto-assigner dès que libération du bon type (proposition logiciel. Celui qui a demandé)
+-Les VIP Privées != premium. Même pour les lits premiums, parfois 2 patients request un lit premium, du ucoup là on pourrait se dire que le lit premium qui se libérera (s'il n'y en avait pas un à l'instant) serait attribué à celui qui avait fait la demande vant, mais appremment pour l'attribution du premium ça dépend aussi du statut du patient: SI c'est un médécin de profession qui est patient, ou un vétéran de guerre, etc is seront prioritaires par rapport à un patient lambda qui fait la requete du meme lit premium.
+-LE SERVICE DES URGENCES, C'EST PAS UN SERVICE D'HOSPI -> C'est un service d'entrée ou de transition. Donc la matérialisation actuelle en tant que service physique est incorrecte. Petit example: Un patient arrive aux urgences, il est admis et mis en entrée et attribué selon le type de procédure requise, un service approprié (urologie, etc ... ces services d'hospitalisation en faite)
+-Patient suite des entree electives ou suite à un patient des urgences.
+-Voir pour communication avec les logicielles existants dans l'hôpital
+-Alerte quand taux d'occupation arrive en dessous d'un seuil, suggérer des actions (fermétures, etc...)
+-Dans les petits blocs, nom + prenom + date de naissance -> Et dès que clic, ajouter au panel à coté les informations complètes du patient sur lequel on a cliqué
+-Bloquer forecasting en fonction des champs obligatoires ou non-obligatoires (obligatoires doivent etre absoluument remplis, non obligatoires ou optionnels, pas spécialement)
+-Personnaliser en fonction du type dintervention, la couleur des cartions, etc ... Code couleur fiable au système actuel ou modulable (jaune, orange, rouge, bleu, etc...), donc tel type de prodédure, tel code couleur qui fit à leur utilisation actuelle
+-Rdv post stop: Notif ou petit "v" pour "right" du check que le dossier est complet ou petit point d'exclamation si incomplet et nécéssite une attention
+
+-----------------------------------
+GO ? NO GO ?
+-----------------------------------
+Sur les 4 personnes présentes:
+4/4 la voit comme un GO
+
+-----------------------------------
+Idée d'utilisation
+-----------------------------------
+Adoption comme outil principale **SI** communication avec les autres logiciels présents dans l'hopital comme orline, planner, oazis + fix des points d'amélioration sus-cités
+
+-----------------------------------
