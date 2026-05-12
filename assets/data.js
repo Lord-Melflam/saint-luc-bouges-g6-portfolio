@@ -10,9 +10,9 @@ window.PORTFOLIO_DATA = {
     { week: 8, title: "Consolidation", progress: 100, stream: "all" },
     { week: 9, title: "Financing and regulation", progress: 100, stream: "all" },
     { week: 10, title: "3 sub-problems split and planning", progress: 100, stream: "all" },
-    { week: 11, title: "Prototype and stream convergence", progress: 75, stream: "all" },
-    { week: 12, title: "Final integration", progress: 40, stream: "all" },
-    { week: 13, title: "Final polishing and closure", progress: 20, stream: "all" }
+    { week: 11, title: "Prototype and stream convergence", progress: 100, stream: "all" },
+    { week: 12, title: "Final integration", progress: 100, stream: "all" },
+    { week: 13, title: "Final polishing and closure", progress: 100, stream: "all" }
   ],
   deliverables: [
     {

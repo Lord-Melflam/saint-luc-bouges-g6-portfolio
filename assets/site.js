@@ -75,6 +75,8 @@
           tableBody.innerHTML = `<tr><td colspan="6">No deliverables match the current filters.</td></tr>`;
           return;
         }
+        // Sort deliverables by week descending, then id
+        rows.sort((a,b) => (b.week - a.week) || a.id.localeCompare(b.id));
         tableBody.innerHTML = rows.map((a) => `
           <tr>
             <td>${a.id}</td>
@@ -159,6 +161,8 @@
         const qq = q === "" || `${a.id} ${a.title} ${a.description} ${a.source}`.toLowerCase().includes(q);
         return wk && tp && qq;
       });
+      // Sort annexes by week descending (so W13 appears before W12), then id
+      rows.sort((a,b) => (b.week - a.week) || a.id.localeCompare(b.id));
       body.innerHTML = rows.map((a) => `
         <tr>
           <td>${a.id}</td>
