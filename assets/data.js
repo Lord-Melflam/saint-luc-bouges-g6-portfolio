@@ -130,17 +130,17 @@ window.PORTFOLIO_DATA = {
     {
       item: "Downstream stream content",
       owner: "Group 6",
-      status: "in-progress",
+      status: "done",
       week: 11,
       stream: "downstream",
       location: "6.Experiments/portfolio/downstream.html"
     },
     {
-      item: "Lheo stream content (integration/BMC)",
+      item: "Integration stream content",
       owner: "Group 6",
-      status: "in-progress",
+      status: "done",
       week: 11,
-      stream: "all",
+      stream: "integration",
       location: "To be integrated in portfolio"
     },
     {
