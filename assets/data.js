@@ -174,6 +174,30 @@ window.PORTFOLIO_DATA = {
       week: 13,
       stream: "all",
       location: "To be generated"
+    },
+    {
+      item: "Final portfolio PDF",
+      owner: "Group 6",
+      status: "done",
+      week: 13,
+      stream: "all",
+      location: "2.Weeks/W13/Portfolio-final.pdf"
+    },
+    {
+      item: "Final presentation slides",
+      owner: "Group 6",
+      status: "done",
+      week: 13,
+      stream: "all",
+      location: "2.Weeks/W13/health innovation classes - présentation finale.pptx"
+    },
+    {
+      item: "Onboarding feedback (Saint-Luc)",
+      owner: "Group 6",
+      status: "done",
+      week: 13,
+      stream: "upstream",
+      location: "2.Weeks/W13/feedback_onboarding_11-05-2026.txt"
     }
   ]
 };
