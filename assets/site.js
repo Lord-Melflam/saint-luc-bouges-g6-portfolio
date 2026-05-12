@@ -216,7 +216,23 @@
   renderDeliverables();
   renderWeeks();
   renderAnnexes();
-  // Overview metrics (dynamic)
+
+  // Overview metrics (dynamic) - ensure data scripts are loaded first
+  function ensureDataLoaded(done) {
+    const toLoad = [];
+    if (!window.PORTFOLIO_DATA) toLoad.push('assets/data.js');
+    if (!window.ANNEXES_DATA) toLoad.push('assets/annexes.js');
+    if (toLoad.length === 0) { done(); return; }
+    let loaded = 0;
+    toLoad.forEach((src) => {
+      const s = document.createElement('script');
+      s.src = src;
+      s.onload = () => { loaded += 1; if (loaded === toLoad.length) done(); };
+      s.onerror = () => { loaded += 1; if (loaded === toLoad.length) done(); };
+      document.body.appendChild(s);
+    });
+  }
+
   function renderOverviewMetrics() {
     const setEl = (id, val) => {
       const el = document.getElementById(id);
@@ -246,6 +262,9 @@
     setEl('metric-annexes', annexes);
     setEl('metric-completed-streams', completed);
   }
-  renderOverviewMetrics();
-  initRevealAndCounters();
+
+  ensureDataLoaded(() => {
+    renderOverviewMetrics();
+    initRevealAndCounters();
+  });
 })();
