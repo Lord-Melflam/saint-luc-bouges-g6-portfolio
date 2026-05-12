@@ -84,7 +84,6 @@
             <td>${a.title}</td>
             <td>${a.description}</td>
             <td><a href="${a.file}" target="_blank" rel="noreferrer">Open deliverable</a></td>
-            <td><code>${a.source}</code></td>
           </tr>
         `).join("");
         return;
@@ -171,7 +170,6 @@
           <td>${a.title}</td>
           <td>${a.description}</td>
           <td><a href="${a.file}" target="_blank" rel="noreferrer">Open annex</a></td>
-          <td><code>${a.source}</code></td>
         </tr>
       `).join("");
     }
@@ -218,5 +216,36 @@
   renderDeliverables();
   renderWeeks();
   renderAnnexes();
+  // Overview metrics (dynamic)
+  function renderOverviewMetrics() {
+    const setEl = (id, val) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.setAttribute('data-count', String(val));
+    };
+    const weeks = (window.PORTFOLIO_DATA && window.PORTFOLIO_DATA.weeks) ? window.PORTFOLIO_DATA.weeks.length : 0;
+    const streamsSet = new Set();
+    if (window.PORTFOLIO_DATA && window.PORTFOLIO_DATA.deliverables) {
+      window.PORTFOLIO_DATA.deliverables.forEach(d => { if (d.stream && d.stream !== 'all') streamsSet.add(d.stream); });
+    }
+    if (window.PORTFOLIO_DATA && window.PORTFOLIO_DATA.weeks) {
+      window.PORTFOLIO_DATA.weeks.forEach(w => { if (w.stream && w.stream !== 'all') streamsSet.add(w.stream); });
+    }
+    const streams = streamsSet.size;
+    const annexes = (window.ANNEXES_DATA) ? window.ANNEXES_DATA.length : 0;
+    const completedSet = new Set();
+    if (window.PORTFOLIO_DATA && window.PORTFOLIO_DATA.deliverables) {
+      window.PORTFOLIO_DATA.deliverables.forEach(d => { if (d.status === 'done' && d.stream && d.stream !== 'all') completedSet.add(d.stream); });
+    }
+    if (window.PORTFOLIO_DATA && window.PORTFOLIO_DATA.weeks) {
+      window.PORTFOLIO_DATA.weeks.forEach(w => { if (w.progress >= 100 && w.stream && w.stream !== 'all') completedSet.add(w.stream); });
+    }
+    const completed = completedSet.size;
+    setEl('metric-weeks', weeks);
+    setEl('metric-streams', streams);
+    setEl('metric-annexes', annexes);
+    setEl('metric-completed-streams', completed);
+  }
+  renderOverviewMetrics();
   initRevealAndCounters();
 })();
